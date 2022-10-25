@@ -3,7 +3,8 @@ import React from "react";
 import { VideoCard, ChannelCard } from "./";
 
 const Videos = ({ videos }) => {
-  console.log(videos)
+  if(!videos?.length) return 'Loading...'
+
   return (
     <Box
       sx={{
